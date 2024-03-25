@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            color: red;
+        }
+
+        h1{
+            color: blueviolet;
+        }
+
+        [data]
+        {
+            color: aquamarine;
+        }
+
+        [data^="med"]
+        {
+            color: rebeccapurple;
+        }
+
+        [data$="science"]
+        {
+            color: chocolate;
+        }
+
+        /* direct child selector */
+        div>p{
+            color: rebeccapurple;
+        }
+
+        /* adjacent sibling selector */
+        .brother + .sister
+        {
+            color: pink;
+        }
+
+        /* general sibling selector */
+        .brother ~ .sister
+        {
+            color: green;
+        }
+
+
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>Selectors in CSS</h1>
+    <ul>
+        <li>Universal</li>
+        <li>Element</li>
+        <li>Class</li>
+        <li>Attribute</li>
+        <li>Combinator</li>
+        <li>Group</li>
+    </ul>
+    <p data="medicines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus pariatur, laboriosam eum deleniti repellat officiis voluptate fugiat, cumque perspiciatis quos impedit quis placeat corporis. Unde quas eos consequatur ratione?</p>
+
+    <p data="medicine style">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem in reiciendis, eveniet magni omnis necessitatibus maiores placeat possimus provident culpa iure. Quae necessitatibus deleniti neque aut rem rerum nam sequi?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit.
+    </p>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quibusdam.
+        </p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div class="brother">Lorem ipsum dolor sit amet.</div>
+    <div class="sister">Lorem, ipsum dolor.</div>
+    <div class="sister">Lorem, ipsum.</div>
+
+</body>
+</html>

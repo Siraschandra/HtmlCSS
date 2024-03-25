@@ -1,0 +1,21 @@
+h1{
+    color:brown;
+}
+
+h2{
+    color: green;
+}
+
+#heading{
+    color: blue;
+}
+
+.magentaText
+{
+    color: magenta;
+}
+
+.container .heading
+{
+    color: red;
+}
